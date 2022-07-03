@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrapt</title>
+    <style>
+        body {
+            background: pink;
+        }
+        .flex-container {
+            display: flex;
+            border: 2px solid #000;
+            max-width: 180px;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .items {
+            margin: 1px;
+            min-width: 50px;
+            min-height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        #titulo {
+            text-align: center;
+            border-bottom: 2px solid #000;
+            padding: 2px;
+        }
+        .nowrap {
+            flex-wrap: nowrap;
+        }
+
+        .wrap {
+            flex-wrap: wrap
+        }
+
+        .wrap-reverse {
+            flex-wrap: wrap-reverse;
+        }
+
+        .direction-row-reverse {
+            flex-direction: row-reverse;
+        }
+
+        .direction-column {
+            flex-direction: column;
+        }
+
+        .direction-column-reverse {
+            flex-direction: column-reverse;
+        }
+        .laranja {
+            background: orange;
+        }
+        .amarelo {
+            background: yellow;
+        }
+
+        .verde {
+            background: green;
+        }
+
+        .roxo {
+            background: violet;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Nowrap</h1>
+    <ul class="flex-container">
+        <li class="items laranja">A</li>
+        <li class="items amarelo">B</li>
+        <li class="items verde">C</li>
+        <li class="items roxo">D</li>
+    </ul>
+    </div>
+    <div>
+        <h1>Wrap</h1>
+        <ul class="flex-container wrap">
+            <li class="items laranja">A</li>
+            <li class="items amarelo">B</li>
+            <li class="items verde">C</li>
+            <li class="items roxo">D</li>
+        </ul>
+    </div>
+    <div>
+        <h1>Wrap reverse</h1>
+        <ul class="flex-container wrap-reverse">
+            <li class="items laranja">A</li>
+            <li class="items amarelo">B</li>
+            <li class="items verde">C</li>
+            <li class="items roxo">D</li>
+        </ul>
+    </div>
+    <h1 id="titulo">Brincando com wrap e direction.</h1>
+    <div>
+        <h1>wrap com direction row-reverse</h1>
+        <ul class="flex-container direction-row-reverse wrap">
+            <li class="items laranja">A</li>
+            <li class="items amarelo">B</li>
+            <li class="items verde">C</li>
+            <li class="items roxo">D</li>
+        </ul>
+    </div>
+    <div>
+        <h1>wrap com direction row</h1>
+        <ul class="flex-container wrap direction-row">
+            <li class="items laranja">A</li>
+            <li class="items amarelo">B</li>
+            <li class="items verde">C</li>
+            <li class="items roxo">D</li>
+        </ul>
+    </div>
+    <div>
+        <h1>wrap com direction column</h1>
+        <ul class="flex-container wrap direction-column">
+            <li class="items laranja">A</li>
+            <li class="items amarelo">B</li>
+            <li class="items verde">C</li>
+            <li class="items roxo">D</li>
+        </ul>
+    </div>
+    <div>
+        <h1>wrap com direction column-reverse</h1>
+        <ul class="flex-container wrap direction-column-reverse">
+            <li class="items laranja">A</li>
+            <li class="items amarelo">B</li>
+            <li class="items verde">C</li>
+            <li class="items roxo">D</li>
+        </ul>
+    </div>
+</body>
+</html>
