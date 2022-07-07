@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify content</title>
+    <style>
+        body {
+            background: pink;
+        }
+
+        .container {
+            display: flex;
+            border: 1px solid black;
+            margin: 0px;
+            max-width: 300px;
+        }
+
+        .item {
+            background: yellowgreen;
+            margin: 2px; 
+            text-align: center;
+            font-size: 20px;
+            width: auto;
+            height: auto;
+        }
+
+        .titulo {
+            margin-bottom: 0px;
+            text-align: center;
+        }
+
+        .subtitulo {
+            margin-top: 0px;
+            text-align: center;
+            border-bottom: 1px solid black;
+        }
+        .flex-start {
+            justify-content: flex-start;
+        }
+
+        .flex-end {
+            justify-content: flex-end;
+        }
+
+        .center {
+            justify-content: center;
+        }
+
+        .space-around {
+            justify-content: space-around;
+        }
+
+        .space-between {
+            justify-content: space-between;
+        }
+
+        .column {
+            flex-direction: column;
+            min-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">Justify-content</h1>
+    <h2>Flex-Start</h2>
+    <header class="container flex-start">
+        <section class="item">1</section>
+        <section class="item">2</section>
+        <section class="item">3</section>
+    </header>
+    <h2>Flex-end</h2>
+    <header class="container flex-end">
+        <section class="item">1</section>
+        <section class="item">2</section>
+        <section class="item">3</section>
+    </header>
+    <h2>Center</h2>
+    <header class="container center">
+        <section class="item">1</section>
+        <section class="item">2</section>
+        <section class="item">3</section>
+    </header>
+    <h2>Space-around</h2>
+    <header class="container space-around">
+        <section class="item">1</section>
+        <section class="item">2</section>
+        <section class="item">3</section>
+    </header>
+    <h2>Space-between</h2>
+    <header class="container space-between">
+        <section class="item">1</section>
+        <section class="item">2</section>
+        <section class="item">3</section>
+    </header>
+
+    <h1 class="titulo">Brincando com o justify-content</h1>
+    <h2 class="subtitulo">Utilizando o flex-direction: column</h2>
+    <h2>Flex-start</h2>
+    <header class="container flex-start column">
+        <section class="item">1</section>
+        <section class="item">2</section>
+        <section class="item">3</section>
+    </header>
+    <h2>Flex-end</h2>
+    <header class="container flex-end column">
+        <section class="item">1</section>
+        <section class="item">2</section>
+        <section class="item">3</section>
+    </header>
+    <h2>Center</h2>
+    <header class="container center column">
+        <section class="item">1</section>
+        <section class="item">2</section>
+        <section class="item">3</section>
+    </header>
+    <h2>Space-around</h2>
+    <header class="container space-around column">
+        <section class="item">1</section>
+        <section class="item">2</section>
+        <section class="item">3</section>
+    </header>
+    <h2>Space-between</h2>
+    <header class="container space-between column">
+        <section class="item">1</section>
+        <section class="item">2</section>
+        <section class="item">3</section>
+    </header>
+</body>
+</html>
