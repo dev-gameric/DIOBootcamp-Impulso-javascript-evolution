@@ -10,28 +10,129 @@
             background-color: pink;
         }
 
+        .titulodefault {
+            text-align: center;
+            border-bottom: 2px solid black;
+            padding-bottom: 10px;
+        }
+
         .container {
             display: flex;
             border: 1px solid black;
-            max-width: 350px;
+            max-width: 300px;
         }
 
         .items {
-            background-color: greenyellow;
-            margin: 2px;
-
+            background-color: green;
+            color: black;
+            margin: 3px;
+            flex: 1;
+            text-align: center;
         }
         
         .center {
             align-items: center;
         }
 
+        .start {
+            align-items: flex-start;
+        }
+
+        .end {
+            align-items: flex-end;
+        }
+        
+        .stretch {
+            align-items: stretch;
+        }
+
+        .baseline {
+            align-items: baseline;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .central {
+            justify-content: center;
+            height: 300px;
+        }
+        .central .items {
+            flex: 0;
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
+    <h1 class="titulodefault">align-items</h1>
+    <h2>Row</h2>
+    <p>center</p>
     <section class="container center">
         <div class="items">Texto</div>
         <div class="items">Texto meramente didático</div>
+        <div class="items">Texto meramente didático para utilizar como exemplo nesta atividade</div>
+    </section>
+
+    <p>start</p>
+    <section class="container start">
+        <div class="items">Texto</div>
+        <div class="items">Texto meramente didático</div>
+        <div class="items">Texto meramente didático para utilizar como exemplo nesta atividade</div>
+    </section>
+
+    <p>end</p>
+    <section class="container end">
+        <div class="items">Texto</div>
+        <div class="items">Texto meramente didático</div>
+        <div class="items">Texto meramente didático para utilizar como exemplo nesta atividade</div>
+    </section>
+
+    <p>stretch</p>
+    <section class="container stretch">
+        <div class="items">Texto</div>
+        <div class="items">Texto meramente didático</div>
+        <div class="items">Texto meramente didático para utilizar como exemplo nesta atividade</div>
+    </section>
+
+    <p>baseline</p>
+    <section class="container baseline">
+        <div class="items"><br>Texto</div>
+        <div class="items">Texto meramente<br><br> didático</div>
+        <div class="items">Texto meramente didático para utilizar como exemplo nesta atividade</div>
+    </section>
+
+    <h2>column</h2>
+    <p>start</p>
+    <section class="container start column">
+        <div class="items">Texto</div>
+        <div class="items">Texto meramente didático</div>
+        <div class="items">Texto meramente didático para utilizar como exemplo nesta atividade</div>
+    </section>
+
+    <p>end</p>
+    <section class="container end column">
+        <div class="items">Texto</div>
+        <div class="items">Texto meramente didático</div>
+        <div class="items">Texto meramente didático para utilizar como exemplo nesta atividade</div>
+    </section>
+
+    <p>baseline</p>
+    <section class="container baseline column">
+        <div class="items"><br>Texto</div>
+        <div class="items">Texto meramente<br><br> didático</div>
+        <div class="items">Texto meramente didático para utilizar como exemplo nesta atividade</div>
+    </section>
+
+    <p>stretch</p>
+    <section class="container stretch column">
+        <div class="items">Texto</div>
+        <div class="items">Texto meramente didático</div>
+        <div class="items">Texto meramente didático para utilizar como exemplo nesta atividade</div>
+    </section>
+
+    <p>Alinhamento central do item ao container</p>
+    <section class="container center central">
         <div class="items">Texto meramente didático para utilizar como exemplo nesta atividade</div>
     </section>
 </body>
