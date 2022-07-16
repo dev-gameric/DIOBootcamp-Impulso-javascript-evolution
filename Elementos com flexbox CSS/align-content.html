@@ -5,8 +5,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>align-content</title>
+    <style>
+        body {
+            background-color: pink;
+        }
+
+        .tituloDefault {
+            text-align: center;
+            border-bottom: 2px solid black;
+            padding-bottom: 10px;
+        }
+
+        .container {
+            display: flex;
+            max-width: 300px;
+            height: 350px;
+            border: 1px solid black;
+            flex-wrap: wrap;
+
+        }
+
+        .items {
+            background-color: maroon;
+            color: white;
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+            flex: 1;
+
+        }
+
+        .stretch {
+            align-content: stretch;
+        }
+
+        .center {
+            align-content: center;
+        }
+
+        .start {
+            align-content: flex-start;
+        }
+
+        .end {
+            align-content: flex-end;
+        }
+
+        .space-between {
+            align-content: space-between;
+        }
+
+        .space-around {
+            align-content: space-around;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1 class="tituloDefault">align-content</h1>
+    <p>stretch</p>
+    <section class="container stretch">
+        <div class="items">texto meramente</div>
+        <div class="items">texto meramente didático</div>
+        <div class="items">texto meramente didático para utilizar como exemplo</div>
+        <div class="items">texto meramente</div>
+        <div class="items">texto meramente didático</div>
+    </section>
+
+    <p>center</p>
+    <section class="container center">
+        <div class="items">texto meramente</div>
+        <div class="items">texto meramente didático</div>
+        <div class="items">texto meramente didático para utilizar como exemplo</div>
+        <div class="items">texto meramente</div>
+        <div class="items">texto meramente didático</div>
+    </section>
+
+    <p>flex-start</p>
+    <section class="container start">
+        <div class="items">texto meramente</div>
+        <div class="items">texto meramente didático</div>
+        <div class="items">texto meramente didático para utilizar como exemplo</div>
+        <div class="items">texto meramente</div>
+        <div class="items">texto meramente didático</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container end">
+        <div class="items">texto meramente</div>
+        <div class="items">texto meramente didático</div>
+        <div class="items">texto meramente didático para utilizar como exemplo</div>
+        <div class="items">texto meramente</div>
+        <div class="items">texto meramente didático</div>
+    </section>
+
+    <p>space-between</p>
+    <section class="container space-between">
+        <div class="items">texto meramente</div>
+        <div class="items">texto meramente didático</div>
+        <div class="items">texto meramente didático para utilizar como exemplo</div>
+        <div class="items">texto meramente</div>
+        <div class="items">texto meramente didático</div>
+    </section>
+
+    <p>space-around</p>
+    <section class="container space-around">
+        <div class="items">texto meramente</div>
+        <div class="items">texto meramente didático</div>
+        <div class="items">texto meramente didático para utilizar como exemplo</div>
+        <div class="items">texto meramente</div>
+        <div class="items">texto meramente didático</div>
+    </section>
 </body>
 </html>
