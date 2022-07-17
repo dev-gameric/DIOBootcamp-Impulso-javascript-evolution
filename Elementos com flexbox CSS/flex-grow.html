@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-grow</title>
+    <style>
+        body {
+            background-color: pink;
+        }
+
+        .tituloDefault {
+            text-align: center;
+            border-bottom: 2px solid black;
+        }
+
+        .container {
+            border: 2px solid black;
+            display: flex;
+            max-width: 300px;
+        }
+
+        .items {
+            text-align: center;
+            background-color: blueviolet;
+            color: white;
+            margin: 5px;
+            padding: 10px;
+        }
+
+        .flex-grow-0 {
+            flex-grow: 0;
+        }
+
+        .flex-grow-1 {
+            flex-grow: 1;
+        }
+
+        .flex-grow-2 {
+            flex-grow: 2;
+        }
+
+        .flex-grow-3 {
+            flex-grow: 3;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="tituloDefault">flex-grow</h1>
+    <p>flex-grow: 0</p>
+    <section class="container">
+        <div class="items flex-grow-0">1</div>
+        <div class="items flex-grow-0">2</div>
+        <div class="items flex-grow-0">3</div>
+        <div class="items flex-grow-0">4</div>
+    </section>
+
+    <p>flex-grow: 1</p>
+    <section class="container">
+        <div class="items flex-grow-1">1</div>
+        <div class="items flex-grow-1">2</div>
+        <div class="items flex-grow-1">3</div>
+        <div class="items flex-grow-1">4</div>
+    </section>
+
+    <p>flex-grow: alternados</p>
+    <section class="container">
+        <div class="items flex-grow-1">1</div>
+        <div class="items flex-grow-2">2</div>
+        <div class="items flex-grow-2">3</div>
+        <div class="items flex-grow-1">4</div>
+    </section>
+
+    <p>flex-grow: alternados</p>
+    <section class="container">
+        <div class="items flex-grow-1">1</div>
+        <div class="items flex-grow-2">22222</div>
+        <div class="items flex-grow-2">333333</div>
+        <div class="items flex-grow-1">4</div>
+    </section>
+</body>
+</html>
